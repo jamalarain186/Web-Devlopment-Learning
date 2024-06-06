@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review Form</title>
+    <style>
+      /* Internal CSS styles for the review form */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: poppins;
+      }
+      :root {
+        --body-color: #e9c46a;
+        --font-color-primary: #e76f51;
+        --font-color-secondary: #ffffff;
+        --main-color: #2a9d8f;
+        --dark-color: #212529;
+        --navbar-color: #264653;
+        --footer-color: #264653;
+      }
+
+      body {
+        background-color: var(--body-color);
+        color: var(--font-color-primary);
+     
+      }
+      .containor{
+        display: flex;
+        justify-content: center ;
+      margin-top: 20px;
+      
+
+      }
+
+      #reviewForm {
+        width: 70%;
+                background-color: var(--font-color-secondary);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      #reviewForm label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      #reviewForm input[type="text"],
+      #reviewForm input[type="email"],
+      #reviewForm select,
+      #reviewForm textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid var(--dark-color);
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      #reviewForm textarea {
+        height: 120px;
+      }
+
+      #reviewForm button {
+        background-color: var(--main-color);
+        color: var(--font-color-secondary);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      #reviewForm button:hover {
+        background-color: var(--dark-color);
+      }
+
+      /* Media queries for responsiveness */
+      @media only screen and (max-width: 600px) {
+        #reviewForm {
+          max-width: 100%;
+        }
+      }
+
+      @media only screen and (max-width: 400px) {
+        #reviewForm textarea {
+          height: 80px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <!-- Review Form Section -->
+         <div class="containor">
+        <section id="reviewForm">
+          <h2>Submit a Review</h2>
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required /><br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" /><br />
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating">
+              <option value="5">5 Stars</option>
+              <option value="4">4 Stars</option>
+              <option value="3">3 Stars</option>
+              <option value="2">2 Stars</option>
+              <option value="1">1 Star</option></select
+            ><br />
+            <label for="review">Review:</label><br />
+            <textarea id="review" name="review" rows="4" required></textarea
+            ><br />
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+      </main>
+      <footer
+        class="footer-container"
+        style="background-color: var(--footer-color)">
+        <!-- Footer content -->
+      </footer>
+    </div>
+  </div>
+  </body>
+</html>

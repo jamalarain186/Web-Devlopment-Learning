@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Gallery</title>
+    <style>
+        /* Internal CSS styles for the picture gallery */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid #ddd; /* Optional: Add border for each image */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Picture Gallery Section -->
+        <div class="gallery">
+            <img src="Car Image copy.jpg" alt="Image 1">
+            <img src="Car Image copy.jpg" alt="Image 2">
+            <img src="Car Image copy.jpg" alt="Image 3">
+            <img src="Car Image copy.jpg" alt="Image 4">
+            <img src="Car Image copy.jpg" alt="Image 5">
+            <img src="Car Image copy.jpg" alt="Image 6">
+            <!-- Add more images as needed -->
+        </div>
+    </div>
+</body>
+</html>

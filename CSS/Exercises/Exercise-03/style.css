@@ -33,12 +33,12 @@ header {
 
 header h1 {
   color: var(--font-color-primary);
-  width: 40%;
+
   font-size: 1.9rem;
 }
 
 .website-navbar {
-  width: 60%;
+  width: 50%;
 }
 
 .website-navbar ul {
@@ -115,7 +115,7 @@ main {
   white-space: nowrap;
   font-family: Poppins;
   font-size: 1rem;
-  animation: typing 2.4s steps(40)  infinite;
+  animation: typing 2.4s steps(40) infinite;
   color: var(--font-color-primary);
   font-weight: 800;
 }
@@ -205,7 +205,7 @@ td:first-child {
   padding: 10px;
   overflow: hidden;
 }
-.footer-contact-section p{
+.footer-contact-section p {
   line-height: 30px;
 }
 .footer-follow-section {
@@ -297,8 +297,9 @@ td:first-child {
   .footer-content {
     padding: 10px;
   }
-  .footer-bottom p{
-  font-size: 0.8rem;}
+  .footer-bottom p {
+    font-size: 0.8rem;
+  }
 
   /* .footer-follow-section ul {
     flex-direction: column;
