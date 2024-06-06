@@ -115,7 +115,7 @@ main {
   white-space: nowrap;
   font-family: Poppins;
   font-size: 1rem;
-  animation: typing 4s steps(40) infinite;
+  animation: typing 2.4s steps(40)  infinite;
   color: var(--font-color-primary);
   font-weight: 800;
 }
