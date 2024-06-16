@@ -1,9 +1,8 @@
-/* Global styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: poppins;
 }
 
 :root {
@@ -12,7 +11,7 @@
   --font-color-secondary: #ffffff;
   --main-color: #2a9d8f;
   --dark-color: #212529;
-  --navbar-color: #264653; /* Corrected spelling from nevbar to navbar */
+  --nevbar-color: #264653;
   --footer-color: #264653;
 
   /* Font Sizes */
@@ -23,13 +22,12 @@
   --font-size-double-xl: 3rem;
 }
 
-/* Body and general layout */
 body {
   background-color: var(--body-color);
 }
 
 header {
-  background-color: var(--navbar-color);
+  background-color: var(--nevbar-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -68,7 +66,6 @@ header h1 {
   color: var(--font-color-primary);
 }
 
-/* Main content section */
 main {
   padding: 65px 0px 10px 10px;
   width: 100%;
@@ -131,10 +128,15 @@ main {
   overflow: hidden;
   border-right: 0.15em solid;
   white-space: nowrap;
+  font-family: Poppins;
   font-size: var(--font-size-small);
   animation: typing 2.4s steps(40) infinite;
   color: var(--font-color-primary);
   font-weight: 800;
+}
+
+.text-container h1,
+.text-container p {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
@@ -147,7 +149,6 @@ main {
   }
 }
 
-/* Articles and sections */
 main article {
   background-color: var(--main-color);
   padding: 10px;
@@ -182,7 +183,6 @@ td:first-child {
   width: 40%;
 }
 
-/* Profile circle and footer */
 .profile-circle {
   width: 5%;
   position: fixed;
@@ -196,7 +196,7 @@ td:first-child {
   border-radius: 50%;
 }
 
-/* Footer styles */
+/* Footer container */
 .footer-container {
   background-color: var(--footer-color);
   color: var(--font-color-secondary);
@@ -223,7 +223,7 @@ td:first-child {
   width: fit-content;
   font-size: var(--font-size-small);
   border-radius: 10px;
-  color: var(--font-color-secondary);
+  color: var (--font-color-secondary);
   background-color: var(--font-color-primary);
   padding: 10px;
   overflow: hidden;
@@ -231,6 +231,11 @@ td:first-child {
 
 .footer-contact-section p {
   line-height: 30px;
+}
+
+.footer-follow-section {
+  border: none !important;
+  margin-bottom: none !important;
 }
 
 .footer-follow-section ul {
@@ -428,72 +433,5 @@ td:first-child {
   .footer-follow-section ul {
     flex-direction: row;
     justify-content: space-between;
-  }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  header h1 {
-    font-size: var(--font-size-extra-large);
-  }
-
-  .website-navbar ul {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .website-navbar ul li a {
-    font-size: var(--font-size-large);
-  }
-
-  .content-wrapper {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .about-section {
-    width: 30%;
-  }
-
-  .sidebar {
-    width: 65%;
-  }
-
-  .text-container h1 {
-    font-size: var(--font-size-double-xl);
-  }
-
-  .engine-details {
-    width: 80%;
-  }
-
-  .profile-circle {
-    width: 5%;
-    left: 95%;
-  }
-
-  .footer-content {
-    padding: 30px;
-  }
-
-  .footer-follow-section ul {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .about-section {
-    width: 25%;
-  }
-
-  .sidebar {
-    width: 70%;
-  }
-
-  .profile-circle {
-    width: 4%;
-    left: 96%;
   }
 }
