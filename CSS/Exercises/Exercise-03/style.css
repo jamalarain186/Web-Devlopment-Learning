@@ -412,7 +412,6 @@ td:first-child {
   .sidebar {
     width: 45%;
   }
-
   .text-container h1 {
     font-size: var(--font-size-double-xl);
   }
