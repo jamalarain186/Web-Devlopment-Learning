@@ -24,6 +24,7 @@
 
 body {
   background-color: var(--body-color);
+  overflow-x: hidden;
 }
 
 header {
@@ -412,6 +413,7 @@ td:first-child {
   .sidebar {
     width: 45%;
   }
+
   .text-container h1 {
     font-size: var(--font-size-double-xl);
   }
