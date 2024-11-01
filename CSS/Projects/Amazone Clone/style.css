@@ -1,0 +1,536 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: border-box;
+  user-select: none;
+  outline: none;
+  font-family: Amazon Ember;
+}
+
+/* <!-- Navbar  -- >  */
+
+.nevbar {
+  height: 60px;
+  background-color: #0f1111;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-right: 10px;
+}
+
+.navbar-border {
+  border: 1px solid transparent;
+  border-radius: 2.5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 50px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: border-color 0.3s ease;
+}
+
+.navbar-border:hover {
+  border: 1px solid #ffffff;
+}
+
+/*  Logo (Box 1) */
+.nav-logo {
+  width: 8.5%;
+}
+
+.logo {
+  width: 100%;
+  scale: 0.85;
+  background-size: cover;
+  cursor: pointer;
+}
+
+/*  Location Box (Box 2) */
+
+.nav-Location-con {
+  width: 100%;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.nav-Location-con p {
+  color: #cccccc;
+  font-size: 12px;
+  margin-left: 15px;
+  font-weight: 200;
+}
+.nav-Location-con i {
+  font-size: 14px;
+}
+
+/*  search Bar (Box 3) */
+
+.search-bar-container {
+  width: 52%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* Select option */
+.search-select-con {
+  height: 100%;
+  width: 7%;
+  font-size: 12px;
+  background-color: #dddcdc;
+  border: none;
+  border-right: 1px solid #cccccc;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.search-select-con:hover {
+  background-color: #cccccc;
+}
+.search-select {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-size: 12px;
+  border: none;
+  text-align: center;
+  appearance: none; /* Hide default arrow in modern browsers */
+  -webkit-appearance: none; /* Hide default arrow in older versions of Chrome/Safari */
+  -moz-appearance: none; /* Hide default arrow in Firefox */
+  background: url("down.png") no-repeat right center; /* Custom arrow icon */
+  background-size: 10px; /* Adjust the size of the custom arrow icon */
+  background-position: 35px;
+  cursor: pointer;
+  padding-right: 12px;
+}
+.search-select::-ms-expand {
+  display: none; /* Hide arrow in IE 11 */
+}
+
+.search-select:focus {
+  outline: 1px solid orange;
+}
+/* input */
+
+.search-input-con {
+  height: 100%;
+  width: 86.5%;
+  display: flex;
+}
+.search-input {
+  height: 40px;
+  width: 100%;
+  border: none;
+  font-size: 14px;
+  text-indent: 10px; /* Adjust the value as needed */
+}
+.search-lens-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -35px;
+}
+
+.search-lens-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay color */
+  display: none;
+  z-index: 3; /* Ensure overlay is above other elements */
+}
+
+.search-icon {
+  height: 20px;
+}
+
+.search-input::placeholder {
+  color: rgba(00, 71, 85, 0.5);
+  font-weight: 530;
+}
+/* search button */
+.search-button-con {
+  height: 40px;
+  width: 6.5%;
+  cursor: pointer;
+}
+
+.search-button {
+  height: 40px;
+  width: 100%;
+  font-size: 1.3rem;
+  background-color: #dda15e;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  cursor: pointer;
+}
+.search-button:hover {
+  background-color: #dd8b2c;
+}
+.search-button:focus {
+  outline: 1px solid orange;
+}
+
+/*  Language Box (Box 4) */
+.selectLanguage-con {
+  height: 20px;
+  width: 65px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.flagLogo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+}
+.selectLanguage select {
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+}
+/*  Sign in Box (Box 5) */
+.signinBox-con {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+}
+
+.signinBox-con p {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+/* return order navbar */
+.returnOrder-con {
+  width: 80px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+}
+
+.returnOrder-con p {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 200;
+}
+/*  Cart Box (Box 6) */
+.cart-con {
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.cart-con i {
+  font-size: 30px;
+}
+
+/* panel /  second nevbar */
+.second-nevbar-con {
+  height: 40px;
+  background-color: #232f3e;
+  color: #ffffff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+
+  padding-left: 11px;
+  padding-right: 11px;
+}
+.second-nevbar {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.second-nevbar-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-nevbar-options a {
+  margin-left: 5px;
+  font-weight: bold;
+}
+.second-nevbar-options i {
+  font-size: 1rem;
+}
+.second-nevbar-options p {
+  padding-left: 5px;
+}
+
+.sec-nav-border {
+  border: 1px solid transparent;
+  border-radius: 2.5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 35px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: border-color 0.3s ease;
+}
+.sec-nav-border:hover {
+  border: 1px solid #ffffff;
+}
+
+/* hero section */
+
+/* background image */
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Styling for individual slides */
+.slider img {
+  width: 100%;
+  height: auto;
+  display: none; /* Hide all slides by default */
+  position: relative;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 8px; /* Adjust the padding as needed */
+  width: 50px; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+/* hero message */
+.hero-mes {
+  width: 100%;
+  background-color: #e3e6e6;
+  color: black;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.85;
+  margin-bottom: 10px;
+}
+.hero-mes a {
+  color: #007185;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hero-mes a:hover {
+  text-decoration: underline;
+  color: #222f3d;
+}
+
+/* Shop Section */
+
+.shop-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #e3e6e6;
+  height: autof;
+}
+
+.box {
+  background-color: white;
+  height: 460px;
+  width: 24%;
+  margin-top: 15px;
+}
+.box h2 {
+  margin-top: 15px;
+  margin-left: 18px;
+  font-weight: bolder;
+  padding-left: 1px;
+}
+.box p {
+  margin-left: 18px;
+  margin-right: 230px;
+
+  color: #007185;
+  cursor: pointer;
+}
+.box p:hover {
+  text-decoration: underline;
+}
+
+.box-img {
+  background-size: cover;
+  border-radius: 5%;
+  height: 330px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+/* footer */
+
+.first-footer {
+  height: 50px;
+  background-color: #37475a;
+  color: white;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.first-footer:hover {
+  background-color: #3f556e;
+  cursor: pointer;
+}
+/* second Footer  */
+.second-footer {
+  height: 65vmin;
+  background-color: #232f3e;
+  color: #dddddd;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 3%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.second-footer p {
+  font-size: 1rem;
+  font-weight: bolder;
+  margin-bottom: 8%;
+}
+
+.second-footer div a {
+  display: block;
+  font-size: 13px;
+  margin-bottom: -5%;
+}
+
+.second-footer div a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* footer panel */
+.footer-panel {
+  height: 95px;
+  border-top: 0.1px solid rgba(192, 192, 192, 0.5);
+  background-color: #232f3e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foot-panel-logo {
+  height: 30px;
+  scale: 1.3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.foot-panel-logo img {
+  height: 100%;
+}
+
+/* lanuage box */
+
+/* 3rd-footer */
+.footer-three {
+  height: 70vmin;
+  background-color: #131a22;
+  font-size: 11px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 3%;
+}
+
+.footer-three p {
+  font-weight: 700;
+  color: #dddddd;
+}
+.footer-three a {
+  color: #999999;
+}
+.footer-three a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footer-three div {
+  width: 13%;
+}
+
+/* footerr-four */
+.footerr-four {
+  height: 80px;
+  font-size: 0.75rem;
+  background-color: #131a22;
+  color: white;
+}
+.pages {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pages a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.croosImg {
+  width: 44px;
+  padding-left: 6px;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}

@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #e0e1dd;
+  font-family: "Poppins";
+  text-decoration: none;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d1b2a;
+  min-height: 100vh;
+  user-select: none;
+}
+section {
+  max-width: 400px;
+  background-color: #ffffff26;
+  backdrop-filter: blur(50px);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 3rem;
+}
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 0 50px;
+}
+.signup {
+  display: none;
+}
+.inputbox {
+  position: relative;
+  margin: 40px 0;
+  max-width: 300px;
+  border-bottom: 2px solid #e0e1dd;
+}
+.inputbox label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+}
+input:focus ~ label,
+input:valid ~ label {
+  top: -5px;
+}
+
+.inputbox input {
+  widows: 100%;
+  height: 60px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 0 35px 0 5px;
+}
+.forget {
+  margin: 35px 0;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+}
+.forget a {
+  margin-left: 20px;
+  font-weight: 550;
+}
+
+.forget label input {
+  zoom: 1.4;
+  vertical-align: sub;
+}
+.forget label a:hover {
+  text-decoration: underline;
+}
+button {
+  width: 100%;
+  height: 40px;
+  background-color: #e0e1dd;
+  border: none;
+  border-radius: 40px;
+  color: #0d1b2a;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #415a77;
+}
+.pera {
+  text-align: center;
+  margin: 25px 0 10px;
+  font-size: 0.9rem;
+}
+
+.pera p a {
+  font-weight: 550;
+}
+
+.pera p a:hover {
+  text-decoration: underline;
+}
